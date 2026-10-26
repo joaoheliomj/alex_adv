@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Alex Araújo Rosa | Advocacia & Consultoria Jurídica — OAB/GO 69.295</title>
+    <meta name="description"
+        content="Dr. Alex Araújo Rosa (OAB/GO 69.295) — Advocacia estratégica em Goiânia/GO. Atuação em Direito Imobiliário (Usucapião e Adjudicação Compulsória em cartório), Família, Sucessões, Trabalho e Previdenciário.">
+    <meta name="keywords"
+        content="Advogado imobiliário em Goiânia, Direito Imobiliário em Goiânia, advogado para usucapião, usucapião judicial e extrajudicial, usucapião em cartório, regularização de imóveis em Goiânia, adjudicação compulsória em cartório, advogado para inventário, divórcio em Goiânia, advogado trabalhista em Goiânia, advogado previdenciário em Goiânia, BPC/LOAS, INSS Goiânia, Dr Alex Araujo Rosa">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dr. Alex Araújo Rosa | Advocacia & Consultoria Jurídica — OAB/GO 69.295">
+    <meta property="og:description"
+        content="Advocacia estratégica, segurança jurídica e proteção dos seus direitos em Goiânia e em todo o Brasil. Atendimento presencial e online.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Inter e Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Configuração Customizada do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        moss: {
+                            DEFAULT: '#265437', // Verde Musgo Nobre
+                            hover: '#1c4029',
+                            light: '#35754d',
+                            bright: '#38a169',
+                            soft: '#48bb78'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* ========================================================================= */
+        /* VARIÁVEIS DE TEMA: ORDENAÇÃO 1 A 10 (1-6 ESCUROS | 7-10 CLAROS)          */
+        /* ========================================================================= */
+        :root {
+            /* 1. Preto Nobre + Musgo (Dark Padrão) */
+            --bg-body: #05070a;
+            --bg-nav: rgba(5, 7, 10, 0.95);
+            --bg-card: #0d1218;
+            --bg-section-alt: #090d12;
+            --bg-card-inner: rgba(0, 0, 0, 0.4);
+            --text-heading: #ffffff;
+            --text-subheading: #f1f5f9;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border-card: rgba(255, 255, 255, 0.1);
+            --border-nav: rgba(255, 255, 255, 0.1);
+            --badge-bg: rgba(38, 84, 55, 0.25);
+            --badge-text: #86efac;
+            --badge-border: rgba(72, 187, 120, 0.35);
+            --icon-bg: rgba(38, 84, 55, 0.2);
+            --icon-color: #86efac;
+            --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+            --metric-color: #4ade80;
+            --btn-bg: #265437;
+            --btn-hover: #1c4029;
+            --scroll-track: rgba(255, 255, 255, 0.1);
+            --scroll-thumb: #265437;
+        }
+
+        /* 2. Preto Alto Contraste & Ata Notarial (Dark) */
+        body.theme-2 {
+            --bg-body: #000000;
+            --bg-nav: rgba(0, 0, 0, 0.98);
+            --bg-card: #080c10;
+            --bg-section-alt: #030507;
+            --bg-card-inner: #0d1217;
+            --text-heading: #ffffff;
+            --text-subheading: #ffffff;
+            --text-body: #e2e8f0;
+            --text-muted: #a0aec0;
+            --border-card: #2d5a3f;
+            --border-nav: #2d5a3f;
+            --badge-bg: #143220;
+            --badge-text: #4ade80;
+            --badge-border: #4ade80;
+            --icon-bg: #143220;
+            --icon-color: #4ade80;
+            --shadow-card: 0 0 25px rgba(45, 90, 63, 0.25);
+            --metric-color: #4ade80;
+            --btn-bg: #2d5a3f;
+            --btn-hover: #38a169;
+            --scroll-track: #143220;
+            --scroll-thumb: #4ade80;
+        }
+
+        /* 3. Grafite Carbono Fosco & Proteção Familiar (Dark) */
+        body.theme-3 {
+            --bg-body: #10141a;
+            --bg-nav: rgba(16, 20, 26, 0.95);
+            --bg-card: #171d26;
+            --bg-section-alt: #0a0e13;
+            --bg-card-inner: rgba(0, 0, 0, 0.4);
+            --text-heading: #ffffff;
+            --text-subheading: #e2e8f0;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border-card: rgba(255, 255, 255, 0.12);
+            --border-nav: rgba(255, 255, 255, 0.12);
+            --badge-bg: rgba(38, 84, 55, 0.3);
+            --badge-text: #86efac;
+            --badge-border: rgba(72, 187, 120, 0.4);
+            --icon-bg: rgba(38, 84, 55, 0.25);
+            --icon-color: #86efac;
+            --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+            --metric-color: #4ade80;
+            --btn-bg: #265437;
+            --btn-hover: #1c4029;
+            --scroll-track: rgba(255, 255, 255, 0.15);
+            --scroll-thumb: #265437;
+        }
+
+        /* 4. Azul Petróleo Escuro (Molde Executivo) */
+        body.theme-4 {
+            --bg-body: #0b1622;
+            --bg-nav: rgba(11, 22, 34, 0.95);
+            --bg-card: #102131;
+            --bg-section-alt: #081018;
+            --bg-card-inner: rgba(0, 0, 0, 0.35);
+            --text-heading: #ffffff;
+            --text-subheading: #f1f5f9;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border-card: #1c3650;
+            --border-nav: #1c3650;
+            --badge-bg: rgba(38, 84, 55, 0.3);
+            --badge-text: #86efac;
+            --badge-border: rgba(72, 187, 120, 0.4);
+            --icon-bg: rgba(38, 84, 55, 0.25);
+            --icon-color: #86efac;
+            --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+            --metric-color: #4ade80;
+            --btn-bg: #265437;
+            --btn-hover: #1c4029;
+            --scroll-track: rgba(28, 54, 80, 0.5);
+            --scroll-thumb: #265437;
+        }
+
+        /* 5. Azul Safira Noturno & Estratégico (Dark) */
+        body.theme-5 {
+            --bg-body: #060e18;
+            --bg-nav: rgba(6, 14, 24, 0.95);
+            --bg-card: #0c1a2c;
+            --bg-section-alt: #040910;
+            --bg-card-inner: rgba(0, 0, 0, 0.4);
+            --text-heading: #ffffff;
+            --text-subheading: #e2e8f0;
+            --text-body: #cbd5e1;
+            --text-muted: #7dd3fc;
+            --border-card: rgba(56, 189, 248, 0.2);
+            --border-nav: rgba(56, 189, 248, 0.2);
+            --badge-bg: rgba(14, 165, 233, 0.18);
+            --badge-text: #7dd3fc;
+            --badge-border: rgba(56, 189, 248, 0.4);
+            --icon-bg: rgba(38, 84, 55, 0.35);
+            --icon-color: #4ade80;
+            --shadow-card: 0 10px 25px -5px rgba(2, 6, 23, 0.7);
+            --metric-color: #38bdf8;
+            --btn-bg: #0369a1;
+            --btn-hover: #0284c7;
+            --scroll-track: rgba(56, 189, 248, 0.2);
+            --scroll-thumb: #0284c7;
+        }
+
+        /* 6. Musgo Profundo Escuro */
+        body.theme-6 {
+            --bg-body: #08110b;
+            --bg-nav: rgba(8, 17, 11, 0.95);
+            --bg-card: #0f1d14;
+            --bg-section-alt: #050b07;
+            --bg-card-inner: rgba(0, 0, 0, 0.4);
+            --text-heading: #ffffff;
+            --text-subheading: #f1f5f9;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --border-card: rgba(72, 187, 120, 0.2);
+            --border-nav: rgba(72, 187, 120, 0.15);
+            --badge-bg: rgba(38, 84, 55, 0.35);
+            --badge-text: #86efac;
+            --badge-border: rgba(72, 187, 120, 0.4);
+            --icon-bg: rgba(38, 84, 55, 0.3);
+            --icon-color: #86efac;
+            --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+            --metric-color: #4ade80;
+            --btn-bg: #265437;
+            --btn-hover: #1c4029;
+            --scroll-track: rgba(72, 187, 120, 0.15);
+            --scroll-thumb: #265437;
+        }
+
+        /* 7. Branco Clean Executivo (Light) */
+        body.theme-7 {
+            --bg-body: #f8fafc;
+            --bg-nav: rgba(255, 255, 255, 0.95);
+            --bg-card: #ffffff;
+            --bg-section-alt: #f1f5f9;
+            --bg-card-inner: #f8fafc;
+            --text-heading: #070a0d;
+            --text-subheading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --border-card: #e2e8f0;
+            --border-nav: #e2e8f0;
+            --badge-bg: rgba(38, 84, 55, 0.1);
+            --badge-text: #1b432a;
+            --badge-border: rgba(38, 84, 55, 0.3);
+            --icon-bg: rgba(38, 84, 55, 0.1);
+            --icon-color: #265437;
+            --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+            --metric-color: #1b432a;
+            --btn-bg: #265437;
+            --btn-hover: #1c4029;
+            --scroll-track: #e2e8f0;
+            --scroll-thumb: #265437;
+        }
+
+        /* 8. Marfim Cartorário & Patrimônio (Light Cartório) */
+        body.theme-8 {
+            --bg-body: #f7f5ed;
+            --bg-nav: rgba(247, 245, 237, 0.96);
+            --bg-card: #ffffff;
+            --bg-section-alt: #eee9dc;
+            --bg-card-inner: #faf8f2;
+            --text-heading: #1c1917;
+            --text-subheading: #292524;
+            --text-body: #44403c;
+            --text-muted: #78716c;
+            --border-card: #ded6c5;
+            --border-nav: #ded6c5;
+            --badge-bg: rgba(38, 84, 55, 0.12);
+            --badge-text: #1b432a;
+            --badge-border: rgba(38, 84, 55, 0.3);
+            --icon-bg: rgba(38, 84, 55, 0.1);
+            --icon-color: #265437;
+            --shadow-card: 0 4px 20px -2px rgba(28, 25, 23, 0.07);
+            --metric-color: #1b432a;
+            --btn-bg: #265437;
+            --btn-hover: #1c4029;
+            --scroll-track: #ded6c5;
+            --scroll-thumb: #265437;
+        }
+
+        /* 9. Azul Petróleo Suave & Musgo (Light) */
+        body.theme-9 {
+            --bg-body: #edf3f8;
+            --bg-nav: rgba(237, 243, 248, 0.95);
+            --bg-card: #ffffff;
+            --bg-section-alt: #e2ecf4;
+            --bg-card-inner: #f1f6fb;
+            --text-heading: #091724;
+            --text-subheading: #10263b;
+            --text-body: #2d4356;
+            --text-muted: #526d82;
+            --border-card: #cbdbe8;
+            --border-nav: #cbdbe8;
+            --badge-bg: rgba(16, 38, 59, 0.08);
+            --badge-text: #10263b;
+            --badge-border: rgba(16, 38, 59, 0.25);
+            --icon-bg: rgba(38, 84, 55, 0.12);
+            --icon-color: #1c4029;
+            --shadow-card: 0 4px 20px -2px rgba(9, 23, 36, 0.07);
+            --metric-color: #1c4029;
+            --btn-bg: #265437;
+            --btn-hover: #1c4029;
+            --scroll-track: #cbdbe8;
+            --scroll-thumb: #1c4029;
+        }
+
+        /* 10. Musgo Natural Suave & Grafite (Light) */
+        body.theme-10 {
+            --bg-body: #f1f5f2;
+            --bg-nav: rgba(241, 245, 242, 0.95);
+            --bg-card: #ffffff;
+            --bg-section-alt: #e5ede7;
+            --bg-card-inner: #f4f8f5;
+            --text-heading: #0c1810;
+            --text-subheading: #15261b;
+            --text-body: #2e3e32;
+            --text-muted: #556c5c;
+            --border-card: #cdded1;
+            --border-nav: #cdded1;
+            --badge-bg: rgba(38, 84, 55, 0.12);
+            --badge-text: #173822;
+            --badge-border: rgba(38, 84, 55, 0.28);
+            --icon-bg: rgba(38, 84, 55, 0.12);
+            --icon-color: #265437;
+            --shadow-card: 0 4px 20px -2px rgba(12, 24, 16, 0.06);
+            --metric-color: #173822;
+            --btn-bg: #265437;
+            --btn-hover: #1c4029;
+            --scroll-track: #cdded1;
+            --scroll-thumb: #265437;
+        }
+
+        /* Aplicação das variáveis */
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            transition: background-color 0.35s ease, color 0.35s ease;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        .dyn-bg-nav { background-color: var(--bg-nav); border-color: var(--border-nav); }
+        .dyn-bg-card { background-color: var(--bg-card); border-color: var(--border-card); box-shadow: var(--shadow-card); }
+        .dyn-bg-card-inner { background-color: var(--bg-card-inner); border-color: var(--border-card); }
+        .dyn-bg-section-alt { background-color: var(--bg-section-alt); border-color: var(--border-card); }
+        
+        .dyn-text-heading { color: var(--text-heading); }
+        .dyn-text-subheading { color: var(--text-subheading); }
+        .dyn-text-body { color: var(--text-body); }
+        .dyn-text-muted { color: var(--text-muted); }
+        
+        .dyn-badge { background-color: var(--badge-bg); color: var(--badge-text); border-color: var(--badge-border); }
+        .dyn-icon-box { background-color: var(--icon-bg); color: var(--icon-color); }
+        .dyn-metric { color: var(--metric-color); }
+        .dyn-btn { background-color: var(--btn-bg); }
+        .dyn-btn:hover { background-color: var(--btn-hover); }
+
+        /* Barra de Rolagem Visível e Estilizada */
+        .theme-scroll-track {
+            scrollbar-width: thin;
+            scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 6px;
+        }
+
+        .theme-scroll-track::-webkit-scrollbar {
+            height: 7px;
+        }
+
+        .theme-scroll-track::-webkit-scrollbar-track {
+            background: var(--scroll-track);
+            border-radius: 999px;
+            margin: 0 8px;
+        }
+
+        .theme-scroll-track::-webkit-scrollbar-thumb {
+            background: var(--scroll-thumb);
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+        }
+
+        .theme-scroll-track::-webkit-scrollbar-thumb:hover {
+            filter: brightness(1.2);
+        }
+
+        /* Modo 2 Linhas */
+        .theme-scroll-track.grid-mode {
+            flex-wrap: wrap !important;
+            overflow-x: visible !important;
+            padding-bottom: 2px !important;
+        }
+
+        /* FAQ Accordion */
+        .accordion-content {
+            transition: max-height 0.35s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .accordion-content.active {
+            opacity: 1;
+        }
+
+        /* Prevenção de clique fantasma no WhatsApp */
+        a[href*="wa.me"] * {
+            pointer-events: none;
+        }
+
+        /* Seletor Ativo dos Botões */
+        .theme-btn.active {
+            background-color: var(--btn-bg) !important;
+            color: #ffffff !important;
+            border-color: #4ade80 !important;
+            box-shadow: 0 0 12px rgba(74, 222, 128, 0.45);
+            transform: scale(1.02);
+        }
+
+        /* Scroll Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 120ms; }
+        .reveal-delay-2 { transition-delay: 240ms; }
+
+        /* Pulso Verde Musgo */
+        .pulse-moss {
+            box-shadow: 0 0 0 0 rgba(72, 187, 120, 0.6);
+            animation: pulse-moss-anim 2.5s infinite;
+        }
+
+        @keyframes pulse-moss-anim {
+            0% { transform: scale(0.98); box-shadow: 0 0 0 0 rgba(72, 187, 120, 0.6); }
+            70% { transform: scale(1); box-shadow: 0 0 0 14px rgba(72, 187, 120, 0); }
+            100% { transform: scale(0.98); box-shadow: 0 0 0 0 rgba(72, 187, 120, 0); }
+        }
+
+        /* Hover de Card */
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .hover-lift:hover { transform: translateY(-4px); }
+    </style>
+</head>
+
+<body class="selection:bg-moss selection:text-white">
+
+    <!-- ========================================================================= -->
+    <!-- BARRA SUPERIOR: 1 A 10 ORDENADO (1-6 ESCUROS | 7-10 CLAROS)               -->
+    <!-- ========================================================================= -->
+    <header class="dyn-bg-nav sticky top-0 z-50 backdrop-blur-md border-b px-3 sm:px-5 py-2.5 transition-colors duration-300 shadow-md">
+        <div class="max-w-6xl mx-auto flex flex-col gap-2">
+            
+            <!-- Linha 1: Identificação + Botões de Ajuda de Navegação -->
+            <div class="flex items-center justify-between w-full">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="dyn-text-heading text-sm sm:text-base font-bold tracking-wide">Dr. Alex Araújo Rosa</span>
+                    <span class="dyn-badge text-[11px] font-semibold px-2 py-0.5 rounded-md border hidden sm:inline">OAB/GO nº 69.295</span>
+                    <span class="dyn-text-muted text-xs hidden lg:inline">• Goiânia/GO</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <!-- Botão Alternar Modo "Ver Todos (2 Linhas)" -->
+                    <button onclick="toggleGridMode()" id="btn-grid-mode"
+                        class="px-2.5 py-1 rounded-lg border border-white/20 bg-black/20 hover:bg-black/40 text-xs font-semibold flex items-center gap-1.5 transition-all text-slate-300 hover:text-white"
+                        title="Alternar entre rolagem e exibição em duas linhas">
+                        <i data-lucide="layout-grid" class="w-3.5 h-3.5 text-emerald-400"></i>
+                        <span id="btn-grid-text" class="hidden sm:inline">Ver Todos (2 Linhas)</span>
+                        <span class="sm:hidden">2 Linhas</span>
+                    </button>
+
+                    <!-- WhatsApp Real do Dr. Alex -->
+                    <a href="https://wa.me/5562995361597?text=Ol%C3%A1%20Dr.%20Alex%20Ara%C3%BAjo,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20jur%C3%ADdico."
+                        target="_blank"
+                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg dyn-btn text-white text-xs font-bold transition-transform active:scale-95 shadow">
+                        <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                        <span>(62) 99536-1597</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Linha 2: Trilho com Numeração Sequencial 1 a 10 -->
+            <div class="relative flex items-center w-full">
+                
+                <!-- Seta Esquerda -->
+                <button onclick="scrollThemeTrack(-220)" id="arrow-left"
+                    class="flex-shrink-0 z-10 w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-black/40 hover:bg-black/70 border border-white/10 text-white flex items-center justify-center mr-1 sm:mr-2 shadow active:scale-95 transition-all"
+                    title="Rolar para a esquerda">
+                    <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+
+                <!-- Trilho Rolável das 10 Propostas (Sequência 1 a 10) -->
+                <div id="theme-track"
+                    class="theme-scroll-track flex items-center gap-1.5 p-1 rounded-xl bg-black/10 dark:bg-black/40 border border-black/10 dark:border-white/10 w-full overflow-x-auto select-none cursor-grab">
+                    
+                    <!-- Bloco Escuros: 1 a 6 -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 px-1 hidden sm:inline">Escuros:</span>
+                        
+                        <button onclick="applyTheme(1)" id="btn-theme-1" title="1. Preto Nobre + Musgo"
+                            class="theme-btn active text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-300 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#05070a] border border-white/50"></span>
+                            <span>1. Preto Nobre</span>
+                        </button>
+
+                        <button onclick="applyTheme(2)" id="btn-theme-2" title="2. Alto Contraste & Usucapião"
+                            class="theme-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-300 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#000000] border border-emerald-400"></span>
+                            <span>2. Contraste Cartório</span>
+                        </button>
+
+                        <button onclick="applyTheme(3)" id="btn-theme-3" title="3. Grafite Carbono & Sucessões"
+                            class="theme-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-300 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#10141a] border border-slate-400"></span>
+                            <span>3. Grafite & Família</span>
+                        </button>
+
+                        <button onclick="applyTheme(4)" id="btn-theme-4" title="4. Azul Petróleo Institucional"
+                            class="theme-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-300 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#0b1622] border border-white/50"></span>
+                            <span>4. Azul Petróleo</span>
+                        </button>
+
+                        <button onclick="applyTheme(5)" id="btn-theme-5" title="5. Azul Safira Estratégico"
+                            class="theme-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-300 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#060e18] border border-sky-400"></span>
+                            <span>5. Safira Jurídico</span>
+                        </button>
+
+                        <button onclick="applyTheme(6)" id="btn-theme-6" title="6. Musgo Profundo"
+                            class="theme-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-300 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#08110b] border border-emerald-400"></span>
+                            <span>6. Musgo Profundo</span>
+                        </button>
+                    </div>
+
+                    <!-- Divisor Visual -->
+                    <div class="h-5 w-[1px] bg-slate-400/30 mx-1 flex-shrink-0"></div>
+
+                    <!-- Bloco Claros: 7 a 10 -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 px-1 hidden sm:inline">Claros:</span>
+
+                        <button onclick="applyTheme(7)" id="btn-theme-7" title="7. Branco Clean Executivo"
+                            class="theme-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#f8fafc] border border-slate-500"></span>
+                            <span>7. Branco Executivo</span>
+                        </button>
+
+                        <button onclick="applyTheme(8)" id="btn-theme-8" title="8. Marfim Notarial & Cartório"
+                            class="theme-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#f7f5ed] border border-amber-600/40"></span>
+                            <span>8. Marfim Cartório</span>
+                        </button>
+
+                        <button onclick="applyTheme(9)" id="btn-theme-9" title="9. Azul Petróleo Suave"
+                            class="theme-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#edf3f8] border border-slate-500"></span>
+                            <span>9. Azul Suave</span>
+                        </button>
+
+                        <button onclick="applyTheme(10)" id="btn-theme-10" title="10. Musgo Natural Suave"
+                            class="theme-btn text-xs font-semibold px-2.5 py-1.5 rounded-lg text-slate-400 hover:text-slate-200 transition-all flex items-center gap-1.5 whitespace-nowrap border border-transparent">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#f1f5f2] border border-slate-500"></span>
+                            <span>10. Musgo Natural</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Seta Direita -->
+                <button onclick="scrollThemeTrack(220)" id="arrow-right"
+                    class="flex-shrink-0 z-10 w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-black/40 hover:bg-black/70 border border-white/10 text-white flex items-center justify-center ml-1 sm:ml-2 shadow active:scale-95 transition-all"
+                    title="Rolar para a direita">
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ========================================================================= -->
+    <!-- HERO SECTION (Identificação Oficial + Apresentação Principal)             -->
+    <!-- ========================================================================= -->
+    <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-8 pb-14 sm:pt-14 sm:pb-20 lg:pt-20 lg:pb-28">
+        
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+                <!-- Coluna 1: Informações e CTA (7 colunas no Desktop) -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    
+                    <!-- Badge Dinâmico de Especialidade -->
+                    <div class="mb-4 sm:mb-5 inline-block">
+                        <span id="hero-badge" class="dyn-badge inline-flex items-center gap-2 tracking-wider uppercase text-xs sm:text-sm font-bold border px-4 py-1.5 rounded-full transition-all">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            Advocacia Estratégica &bull; OAB/GO nº 69.295
+                        </span>
+                    </div>
+
+                    <!-- Nome Principal -->
+                    <h1 class="dyn-text-heading text-3xl sm:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 leading-tight font-serif tracking-tight">
+                        Dr. Alex Araújo Rosa
+                    </h1>
+
+                    <p class="text-sm sm:text-base font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest mb-4">
+                        Advogado &bull; OAB/GO nº 69.295 &bull; Goiânia/GO
+                    </p>
+
+                    <!-- Subtítulo Adaptativo -->
+                    <h2 id="hero-subheading" class="dyn-text-subheading text-xl sm:text-2xl lg:text-3xl font-serif leading-snug font-normal mb-5 sm:mb-6">
+                        Advocacia estratégica, segurança jurídica e proteção dos seus direitos.
+                    </h2>
+
+                    <!-- Descrição Clara e Completa do Alex -->
+                    <p id="hero-desc" class="dyn-text-body text-base sm:text-lg lg:text-xl mb-8 sm:mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Atuação em <strong>Direito Imobiliário, Família, Sucessões, Direito do Trabalho e Previdenciário</strong>. Assessoria jurídica especializada na prevenção e resolução de conflitos, proteção patrimonial e reconhecimento de direitos na esfera judicial, extrajudicial e administrativa.
+                    </p>
+
+                    <!-- Botões de Ação -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://wa.me/5562995361597?text=Ol%C3%A1,%20Dr.%20Alex%20Ara%C3%BAjo%20Rosa.%20Gostaria%20de%20uma%20avalia%C3%A7%C3%A3o%20jur%C3%ADdica%20do%20meu%20caso."
+                            target="_blank"
+                            class="pulse-moss dyn-btn inline-flex items-center justify-center rounded-xl font-bold transition-all duration-300 focus:outline-none uppercase tracking-wide text-sm sm:text-base py-4 sm:py-4.5 px-8 sm:px-10 text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 active:scale-95">
+                            Conversar no WhatsApp
+                            <i data-lucide="message-circle" class="ml-2.5 h-6 w-6"></i>
+                        </a>
+
+                        <a href="#areas"
+                            class="inline-flex items-center justify-center rounded-xl font-bold transition-all duration-200 border border-black/20 dark:border-white/20 hover:bg-black/10 dark:hover:bg-white/10 text-sm sm:text-base py-4 px-6 dyn-text-heading">
+                            Conhecer Áreas de Atuação
+                        </a>
+                    </div>
+
+                    <div class="mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs sm:text-sm dyn-text-muted">
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Ed. Map Center, Setor Bueno, Goiânia/GO</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Atendimento Presencial e Online em Todo o Brasil</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Coluna 2: Card de Identidade do Advogado (5 colunas no Desktop) -->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <div class="relative w-full max-w-sm sm:max-w-md">
+                        
+                        <!-- Efeito de halo suave -->
+                        <div class="absolute -inset-2 bg-moss/20 rounded-3xl blur-xl opacity-70"></div>
+                        
+                        <div class="dyn-bg-card hover-lift relative rounded-2xl sm:rounded-3xl border p-6 sm:p-8 text-center transition-all">
+                            
+                            <!-- Foto Oficial do Dr. Alex Araújo Rosa -->
+                            <div class="relative w-44 h-56 sm:w-52 sm:h-64 mx-auto rounded-2xl border-2 border-emerald-400/50 shadow-2xl mb-4 sm:mb-5 overflow-hidden group bg-slate-900">
+                                <img src="https://i.postimg.cc/FsYcmws2/Whats-App-Image-2026-10-22-at-12-51-26.jpg"
+                                    alt="Dr. Alex Araújo Rosa - Advogado OAB/GO 69.295"
+                                    class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-60 pointer-events-none"></div>
+                                <div class="absolute bottom-2.5 inset-x-3 bg-black/65 backdrop-blur-md text-[11px] text-emerald-300 font-sans font-semibold px-2 py-1 rounded-lg border border-emerald-500/30 text-center shadow-lg">
+                                    Dr. Alex Araújo Rosa
+                                </div>
+                            </div>
+
+                            <h3 class="dyn-text-heading text-xl sm:text-2xl font-bold font-serif">Dr. Alex Araújo Rosa</h3>
+                            <p class="text-xs sm:text-sm text-emerald-600 dark:text-emerald-300 font-semibold uppercase tracking-wider mt-1">Advogado &bull; OAB/GO nº 69.295</p>
+
+                            <!-- Destaques Estratégicos -->
+                            <div class="mt-6 pt-5 border-t border-black/10 dark:border-white/10 grid grid-cols-2 gap-3 text-left">
+                                <div class="dyn-bg-card-inner p-3 sm:p-3.5 rounded-xl border">
+                                    <span class="dyn-text-muted block text-[11px] uppercase tracking-wider">Atuação:</span>
+                                    <span class="dyn-text-heading font-bold text-sm sm:text-base">Judicial & Cartório</span>
+                                    <span class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold block mt-0.5">Extrajudicial / INSS</span>
+                                </div>
+                                <div class="dyn-bg-card-inner p-3 sm:p-3.5 rounded-xl border">
+                                    <span class="dyn-text-muted block text-[11px] uppercase tracking-wider">Especialidade:</span>
+                                    <span class="dyn-text-heading font-bold text-sm sm:text-base">Patrimonial</span>
+                                    <span class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold block mt-0.5">Imobiliário & Sucessões</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 p-3 rounded-xl dyn-bg-card-inner border text-left text-xs space-y-1.5 dyn-text-muted">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4 text-emerald-500 flex-shrink-0"></i>
+                                    <span>Av. T-63, nº 1206, Map Center, Sl. 103 — Setor Bueno</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="phone" class="w-4 h-4 text-emerald-500 flex-shrink-0"></i>
+                                    <span class="dyn-text-heading font-semibold">(62) 9 9536-1597</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="mail" class="w-4 h-4 text-emerald-500 flex-shrink-0"></i>
+                                    <span>alexaraujor.adv@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 text-xs dyn-text-muted flex items-center justify-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                Atendimento mediante agendamento prévio
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- DIFERENCIAIS DO ESCRITÓRIO (Atendimento, Estratégia, Transparência)       -->
+    <!-- ========================================================================= -->
+    <section class="dyn-bg-section-alt py-14 sm:py-20 border-t border-b transition-colors relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-10 sm:mb-14">
+                <span class="dyn-badge text-xs font-bold uppercase tracking-widest px-3.5 py-1 rounded-full border inline-block mb-3">
+                    Metodologia & Compromisso
+                </span>
+                <h2 class="dyn-text-heading text-2xl sm:text-3xl lg:text-4xl font-bold font-serif">
+                    Diferenciais do Escritório
+                </h2>
+                <div class="w-20 h-1 bg-moss mx-auto mt-3 rounded-full"></div>
+                <p class="dyn-text-body mt-4 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
+                    Uma advocacia pautada pelo estudo criterioso dos fatos, comunicação transparente e estratégias jurídicas individualizadas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+                
+                <!-- Diferencial 1 -->
+                <div class="dyn-bg-card hover-lift border rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="dyn-icon-box p-3 rounded-xl mb-4 inline-block">
+                            <i data-lucide="users" class="h-6 w-6"></i>
+                        </div>
+                        <h3 class="dyn-text-heading text-lg sm:text-xl font-bold mb-2.5 font-serif">Atendimento Individualizado</h3>
+                        <p class="dyn-text-body text-sm leading-relaxed">
+                            Cada demanda é minuciosamente analisada considerando suas particularidades, histórico familiar/documental, necessidades e objetivos jurídicos específicos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Diferencial 2 -->
+                <div class="dyn-bg-card hover-lift border rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="dyn-icon-box p-3 rounded-xl mb-4 inline-block">
+                            <i data-lucide="landmark" class="h-6 w-6"></i>
+                        </div>
+                        <h3 class="dyn-text-heading text-lg sm:text-xl font-bold mb-2.5 font-serif">Atuação Judicial e Extrajudicial</h3>
+                        <p class="dyn-text-body text-sm leading-relaxed">
+                            Acompanhamento direto e célere perante o Poder Judiciário, Cartórios de Registro de Imóveis e Notas, além de órgãos administrativos (INSS e prefeituras).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Diferencial 3 -->
+                <div class="dyn-bg-card hover-lift border rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="dyn-icon-box p-3 rounded-xl mb-4 inline-block">
+                            <i data-lucide="scale" class="h-6 w-6"></i>
+                        </div>
+                        <h3 class="dyn-text-heading text-lg sm:text-xl font-bold mb-2.5 font-serif">Estratégia e Conhecimento Técnico</h3>
+                        <p class="dyn-text-body text-sm leading-relaxed">
+                            Definição de medidas jurídicas fundamentadas na legislação em vigor, na jurisprudência dominante e nos elementos comprobatórios de cada caso concreto.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Diferencial 4 -->
+                <div class="dyn-bg-card hover-lift border rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="dyn-icon-box p-3 rounded-xl mb-4 inline-block">
+                            <i data-lucide="shield-check" class="h-6 w-6"></i>
+                        </div>
+                        <h3 class="dyn-text-heading text-lg sm:text-xl font-bold mb-2.5 font-serif">Transparência e Responsabilidade</h3>
+                        <p class="dyn-text-body text-sm leading-relaxed">
+                            Comunicação clara, acessível e sem termos herméticos, com sigilo profissional rigoroso e acompanhamento detalhado de todas as etapas do procedimento.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- ÁREAS DE ATUAÇÃO (5 Ramos Oficiais com Destaque Completo)                  -->
+    <!-- ========================================================================= -->
+    <section id="areas" class="py-14 sm:py-20 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-10 sm:mb-14">
+                <span class="dyn-badge text-xs font-bold uppercase tracking-widest px-3.5 py-1 rounded-full border inline-block mb-3">
+                    Especialidades Jurídicas
+                </span>
+                <h2 class="dyn-text-heading text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 font-serif">
+                    Áreas de Atuação
+                </h2>
+                <div class="w-20 h-1 bg-moss mx-auto rounded-full"></div>
+                <p class="dyn-text-body mt-4 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
+                    Assessoria jurídica especializada na prevenção e resolução de conflitos, proteção patrimonial e reconhecimento de direitos.
+                </p>
+            </div>
+
+            <!-- Grade com os 5 ramos de atuação -->
+            <div class="space-y-8">
+
+                <!-- 1. DIREITO IMOBILIÁRIO (Em Destaque com Usucapião e Adjudicação) -->
+                <div class="dyn-bg-card border rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-black/10 dark:border-white/10">
+                        <div class="flex items-center gap-3">
+                            <div class="dyn-icon-box p-3 rounded-xl">
+                                <i data-lucide="building-2" class="h-7 w-7"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest">Especialidade Principal</span>
+                                <h3 class="dyn-text-heading text-xl sm:text-2xl font-bold font-serif">1. Direito Imobiliário</h3>
+                            </div>
+                        </div>
+                        <span class="dyn-badge text-xs font-semibold px-3 py-1.5 rounded-lg border self-start lg:self-auto">
+                            Proteção Patrimonial & Regularização de Imóveis
+                        </span>
+                    </div>
+
+                    <p class="dyn-text-body text-sm sm:text-base mt-4 leading-relaxed">
+                        Atuação em todas as questões relacionadas à propriedade, posse, aquisição, transmissão, utilização e regularização de imóveis urbanos e rurais. Assessoria em contratos de compra e venda, escrituras públicas, registros imobiliários, regularização fundiária, distratos, locações, condomínios, ações possessórias (reintegração e manutenção de posse), ações reivindicatórias, conflitos de propriedade e demais demandas imobiliárias.
+                    </p>
+
+                    <!-- Destaque Duplo Especial: Usucapião e Adjudicação Compulsória -->
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        
+                        <!-- Modalidade A: Usucapião -->
+                        <div class="dyn-bg-card-inner p-4 sm:p-5 rounded-xl border">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="file-check" class="w-5 h-5 text-emerald-500"></i>
+                                <h4 class="dyn-text-heading font-bold text-base font-serif">Usucapião Judicial e Extrajudicial</h4>
+                            </div>
+                            <p class="dyn-text-body text-xs sm:text-sm leading-relaxed">
+                                Instrumento jurídico que permite o reconhecimento da propriedade por meio da posse mansa e pacífica. Atuamos nas diversas modalidades de usucapião, tanto pela via judicial quanto <strong>diretamente perante o Cartório de Registro de Imóveis</strong>, incluindo imóveis urbanos, rurais e situações envolvendo bens de herança.
+                            </p>
+                        </div>
+
+                        <!-- Modalidade B: Adjudicação Compulsória -->
+                        <div class="dyn-bg-card-inner p-4 sm:p-5 rounded-xl border">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="key" class="w-5 h-5 text-emerald-500"></i>
+                                <h4 class="dyn-text-heading font-bold text-base font-serif">Adjudicação Compulsória em Cartório e Judicial</h4>
+                            </div>
+                            <p class="dyn-text-body text-xs sm:text-sm leading-relaxed">
+                                Medida destinada a regularizar imóveis quando o comprador possui contrato de aquisição ou promessa quitada, mas o vendedor sumiu, faliu ou se recusa a passar a escritura definitiva. Procedimento célere diretamente no cartório (Lei 14.382/2022) ou na via judicial.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Grade 2x2 para os outros 4 Ramos -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+
+                    <!-- 2. DIREITO DAS SUCESSÕES -->
+                    <div class="dyn-bg-card hover-lift border rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="dyn-icon-box p-3 rounded-xl">
+                                    <i data-lucide="landmark" class="h-6 w-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="dyn-text-heading text-lg sm:text-xl font-bold font-serif">2. Direito das Sucessões</h3>
+                                    <span class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold">Transmissão & Preservação Patrimonial</span>
+                                </div>
+                            </div>
+                            <p class="dyn-text-body text-sm leading-relaxed mb-4">
+                                Atuação em <strong>inventários judiciais e extrajudiciais (em cartório)</strong>, arrolamentos, partilhas e sobrepartilhas de bens, cessão de direitos hereditários, testamentos, planejamento sucessório, administração de espólio, regularização de imóveis herdados e resolução de conflitos entre herdeiros.
+                            </p>
+                            <p class="dyn-text-muted text-xs leading-relaxed border-t border-black/10 dark:border-white/10 pt-3">
+                                Assessoria desde a organização documental e identificação dos sucessores até a conclusão do procedimento e partilha definitiva.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3. DIREITO DE FAMÍLIA -->
+                    <div class="dyn-bg-card hover-lift border rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="dyn-icon-box p-3 rounded-xl">
+                                    <i data-lucide="heart-handshake" class="h-6 w-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="dyn-text-heading text-lg sm:text-xl font-bold font-serif">3. Direito de Família</h3>
+                                    <span class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold">Proteção & Equilíbrio nas Relações</span>
+                                </div>
+                            </div>
+                            <p class="dyn-text-body text-sm leading-relaxed mb-4">
+                                Prevenção e resolução de conflitos familiares: <strong>divórcios judiciais e extrajudiciais (em cartório)</strong>, reconhecimento e dissolução de união estável, guarda de filhos, regulamentação de convivência, pensão alimentícia (fixação, revisão e exoneração), partilha de bens, investigação de paternidade, tutela e curatela.
+                            </p>
+                            <p class="dyn-text-muted text-xs leading-relaxed border-t border-black/10 dark:border-white/10 pt-3">
+                                Cuidado com os aspectos jurídicos, patrimoniais e humanos de cada situação com rigor técnico e discrição.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 4. DIREITO DO TRABALHO -->
+                    <div class="dyn-bg-card hover-lift border rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="dyn-icon-box p-3 rounded-xl">
+                                    <i data-lucide="briefcase" class="h-6 w-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="dyn-text-heading text-lg sm:text-xl font-bold font-serif">4. Direito do Trabalho</h3>
+                                    <span class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold">Defesa de Direitos & Relações de Emprego</span>
+                                </div>
+                            </div>
+                            <p class="dyn-text-body text-sm leading-relaxed mb-4">
+                                Atuação em reclamações trabalhistas, reconhecimento de vínculo empregatício (trabalho sem carteira assinada), verbas rescisórias não pagas, rescisão indireta, horas extras, FGTS, adicionais de insalubridade e periculosidade, equiparação salarial, estabilidade provisória, acidentes de trabalho e doenças ocupacionais.
+                            </p>
+                            <p class="dyn-text-muted text-xs leading-relaxed border-t border-black/10 dark:border-white/10 pt-3">
+                                Análise detalhada de contratos e direitos decorrentes das relações laborais perante a Justiça do Trabalho.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 5. DIREITO PREVIDENCIÁRIO -->
+                    <div class="dyn-bg-card hover-lift border rounded-2xl p-6 sm:p-7 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="dyn-icon-box p-3 rounded-xl">
+                                    <i data-lucide="clock" class="h-6 w-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="dyn-text-heading text-lg sm:text-xl font-bold font-serif">5. Direito Previdenciário</h3>
+                                    <span class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold">Benefícios & Seguridade do INSS</span>
+                                </div>
+                            </div>
+                            <p class="dyn-text-body text-sm leading-relaxed mb-4">
+                                Concessão e defesa de direitos previdenciários e assistenciais: <strong>aposentadorias, planejamento previdenciário, aposentadoria especial</strong>, auxílio por incapacidade temporária/permanente, auxílio-acidente, pensão por morte, salário-maternidade, revisões de cálculo e benefício assistencial <strong>BPC/LOAS</strong>.
+                            </p>
+                            <p class="dyn-text-muted text-xs leading-relaxed border-t border-black/10 dark:border-white/10 pt-3">
+                                Análise de CNIS, tempo rural e especial, requerimentos administrativos e ações judiciais contra benefícios negados pelo INSS.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Botão de Ação Central -->
+            <div class="text-center mt-12 sm:mt-14">
+                <a href="https://wa.me/5562995361597?text=Ol%C3%A1%20Dr.%20Alex%20Ara%C3%BAjo,%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20meu%20caso."
+                    target="_blank"
+                    class="dyn-btn inline-flex items-center justify-center gap-2.5 rounded-xl font-bold transition-all duration-200 uppercase tracking-wide text-sm sm:text-base py-4 px-8 sm:px-10 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:scale-95">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    Falar com Dr. Alex Araújo Rosa no WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- CONHEÇA O ADVOGADO (Perfil e Filosofia de Atuação)                         -->
+    <!-- ========================================================================= -->
+    <section id="sobre" class="dyn-bg-section-alt py-14 sm:py-20 border-t border-b transition-colors">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            
+            <div class="dyn-bg-card rounded-3xl border p-7 sm:p-12 shadow-xl relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-4 text-center">
+                        <div class="relative w-48 h-64 sm:w-56 sm:h-76 md:w-60 md:h-80 mx-auto rounded-2xl border-2 border-emerald-400/50 shadow-2xl mb-4 overflow-hidden group bg-slate-900">
+                            <img src="https://i.postimg.cc/7LwfCRDF/Whats-App-Image-2026-10-22-at-12-51-26-(1).jpg"
+                                alt="Dr. Alex Araújo Rosa - Conheça o Advogado"
+                                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-40 pointer-events-none"></div>
+                        </div>
+                        <h3 class="dyn-text-heading text-xl sm:text-2xl font-bold font-serif">Dr. Alex Araújo Rosa</h3>
+                        <p class="text-xs sm:text-sm text-emerald-600 dark:text-emerald-400 font-bold uppercase tracking-wider mt-1">Advogado &bull; OAB/GO nº 69.295</p>
+                        
+                        <div class="mt-4 pt-4 border-t border-black/10 dark:border-white/10 text-xs dyn-text-muted space-y-1">
+                            <p class="font-medium dyn-text-heading">Sede em Goiânia / GO</p>
+                            <p>Ed. Map Center &bull; Setor Bueno</p>
+                            <p class="text-emerald-500 font-semibold">Atendimento em todo o Brasil</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-8 dyn-text-body space-y-4 text-sm sm:text-base leading-relaxed">
+                        <span class="dyn-badge text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border inline-block">
+                            Conheça o Advogado
+                        </span>
+                        
+                        <h4 class="dyn-text-heading text-xl sm:text-2xl font-bold font-serif">
+                            Advocacia séria, acessível e tecnicamente fundamentada
+                        </h4>
+
+                        <p>
+                            Com atuação em <strong>Direito Imobiliário, Direito de Família, Direito das Sucessões, Direito do Trabalho e Direito Previdenciário</strong>, desenvolvo uma advocacia fundamentada no conhecimento técnico, na responsabilidade profissional e na compreensão individualizada das necessidades de cada cliente.
+                        </p>
+
+                        <p>
+                            Minha atuação abrange a orientação, a prevenção e a resolução de conflitos jurídicos, tanto na esfera judicial quanto extrajudicial e administrativa, sempre com atenção à segurança jurídica e à adequada proteção dos direitos envolvidos.
+                        </p>
+
+                        <p>
+                            Dedico especial atenção às questões imobiliárias e patrimoniais, especialmente aos procedimentos de <strong>usucapião, adjudicação compulsória, regularização de imóveis, inventários e partilhas de bens</strong>, sem deixar de exercer uma atuação abrangente nas demais áreas do escritório.
+                        </p>
+
+                        <p class="font-medium dyn-text-heading border-l-2 border-emerald-500 pl-4 py-1 italic">
+                            "Compreendo que cada demanda possui particularidades que exigem estudo, planejamento e uma estratégia jurídica própria. Por essa razão, minha atuação é pautada pela análise criteriosa dos fatos e documentos, pela comunicação transparente e pelo compromisso com a adequada condução de cada procedimento."
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- POR QUE REGULARIZAR AGORA? (Cards de Valorização & Proteção)              -->
+    <!-- ========================================================================= -->
+    <section class="py-14 sm:py-20 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center mb-10 sm:mb-14">
+                <span class="dyn-badge text-xs font-bold uppercase tracking-widest px-3.5 py-1 rounded-full border inline-block mb-3">
+                    Segurança Patrimonial
+                </span>
+                <h2 class="dyn-text-heading text-2xl sm:text-3xl lg:text-4xl font-bold font-serif">
+                    Por que regularizar a escritura e sua titularidade agora?
+                </h2>
+                <div class="w-16 h-1 bg-moss mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 text-center">
+                
+                <div class="dyn-bg-card hover-lift p-6 sm:p-8 rounded-2xl border">
+                    <div class="dyn-metric text-3xl sm:text-4xl font-extrabold mb-2">+35% a 50%</div>
+                    <h3 class="dyn-text-heading text-base sm:text-lg font-bold mb-2 font-serif">Valorização Imediata</h3>
+                    <p class="dyn-text-body text-sm sm:text-base leading-relaxed">
+                        O imóvel com escritura pública e matrícula registrada pode ser financiado por qualquer banco e tem liquidez máxima pelo valor real de mercado.
+                    </p>
+                </div>
+
+                <div class="dyn-bg-card hover-lift p-6 sm:p-8 rounded-2xl border">
+                    <div class="dyn-metric text-3xl sm:text-4xl font-extrabold mb-2">100% Protegido</div>
+                    <h3 class="dyn-text-heading text-base sm:text-lg font-bold mb-2 font-serif">Livre de Penhoras</h3>
+                    <p class="dyn-text-body text-sm sm:text-base leading-relaxed">
+                        Evita que execuções fiscais, falências ou dívidas do antigo titular afetem o bem que você já adquiriu e quitou legitimamente.
+                    </p>
+                </div>
+
+                <div class="dyn-bg-card hover-lift p-6 sm:p-8 rounded-2xl border">
+                    <div class="dyn-metric text-3xl sm:text-4xl font-extrabold mb-2">Via Cartório</div>
+                    <h3 class="dyn-text-heading text-base sm:text-lg font-bold mb-2 font-serif">Muito Mais Rápido</h3>
+                    <p class="dyn-text-body text-sm sm:text-base leading-relaxed">
+                        A via extrajudicial em cartório poupa anos de morosidade judicial em inventários, usucapião, divórcios e adjudicações compulsórias.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- DÚVIDAS FREQUENTES (14 Perguntas Oficiais do Cliente)                      -->
+    <!-- ========================================================================= -->
+    <section id="faq" class="dyn-bg-section-alt py-14 sm:py-20 border-t transition-colors">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center mb-10 sm:mb-12">
+                <span class="dyn-badge text-xs font-bold uppercase tracking-widest px-3.5 py-1 rounded-full border inline-block mb-3">
+                    Tire Suas Dúvidas
+                </span>
+                <h2 class="dyn-text-heading text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-3">
+                    Perguntas Frequentes
+                </h2>
+                <div class="w-16 h-1 bg-moss mx-auto rounded-full"></div>
+                <p class="dyn-text-body mt-4 text-sm sm:text-base max-w-xl mx-auto">
+                    Esclarecimentos sobre os principais procedimentos imobiliários, sucessórios, familiares, trabalhistas e previdenciários.
+                </p>
+            </div>
+
+            <!-- Filtros Rápidos de FAQ -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+                <button onclick="filterFaq('todos')" id="filter-todos" class="faq-filter-btn active text-xs font-bold px-3 py-1.5 rounded-lg border dyn-btn text-white transition-all">
+                    Todas (14)
+                </button>
+                <button onclick="filterFaq('imobiliario')" id="filter-imobiliario" class="faq-filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-black/10 dark:border-white/10 dyn-text-muted hover:dyn-text-heading transition-all">
+                    Direito Imobiliário (1-5)
+                </button>
+                <button onclick="filterFaq('sucessoes-familia')" id="filter-sucessoes-familia" class="faq-filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-black/10 dark:border-white/10 dyn-text-muted hover:dyn-text-heading transition-all">
+                    Sucessões & Família (6-9)
+                </button>
+                <button onclick="filterFaq('trabalho-inss')" id="filter-trabalho-inss" class="faq-filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-black/10 dark:border-white/10 dyn-text-muted hover:dyn-text-heading transition-all">
+                    Trabalho & Previdenciário (10-14)
+                </button>
+            </div>
+
+            <div class="space-y-3.5">
+                
+                <!-- FAQ 1 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="imobiliario">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">01.</span>
+                            Como regularizar um imóvel que não possui escritura?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        A regularização depende da situação documental e registral do imóvel. Conforme as circunstâncias, poderão ser utilizados procedimentos como <strong>usucapião</strong>, <strong>adjudicação compulsória</strong>, escritura pública de compra e venda, regularização fundiária (REURB) ou outras medidas legalmente previstas.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="imobiliario">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">02.</span>
+                            Qual a diferença entre usucapião e adjudicação compulsória?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        A <strong>usucapião</strong> permite adquirir a propriedade mediante a comprovação da posse qualificada (mansa e ininterrupta) pelo período exigido em lei. Já a <strong>adjudicação compulsória</strong> busca viabilizar a transferência da propriedade quando já existe uma obrigação contratual de transmissão (compra e venda quitada) que não foi devidamente cumprida. Ambos os procedimentos podem ser realizados judicial ou extrajudicialmente perante o cartório.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="imobiliario">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">03.</span>
+                            É possível fazer usucapião diretamente no cartório?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        <strong>Sim.</strong> A usucapião extrajudicial é realizada perante o Cartório de Registro de Imóveis competente, com base no Código de Processo Civil e no Provimento 65 do CNJ, mediante assistência obrigatória de advogado e apresentação de ata notarial e documentos que atestem o tempo de posse.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="imobiliario">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">04.</span>
+                            Comprei um imóvel, mas o vendedor não quer passar a escritura. O que fazer?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        Dependendo da documentação e das circunstâncias da aquisição e quitação, poderá ser cabível a <strong>adjudicação compulsória</strong> judicial ou extrajudicial (direto em cartório), permitindo que a transmissão da propriedade seja suprida e registrada em seu nome.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="imobiliario">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">05.</span>
+                            É possível fazer usucapião de imóvel de herança?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        <strong>Sim, em determinadas circunstâncias.</strong> A jurisprudência consolidada admite a usucapião por herdeiro que comprove posse exclusiva sobre o bem, com ânimo de dono (sem oposição dos demais e arcando com as despesas) e pelo prazo legalmente exigido. A viabilidade depende da análise da situação concreta.
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="sucessoes-familia">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">06.</span>
+                            Quanto tempo demora um inventário?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        O prazo depende da modalidade: o <strong>inventário extrajudicial em cartório</strong> pode ser concluído em poucas semanas ou meses. Já o inventário judicial depende da complexidade do patrimônio, pendências fiscais e da existência ou não de divergências entre os herdeiros.
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="sucessoes-familia">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">07.</span>
+                            É possível realizar inventário diretamente no cartório?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        <strong>Sim.</strong> A Lei 11.441/2007 permite o inventário por escritura pública em cartório de notas, inclusive com recentes regulamentações do CNJ que flexibilizam a via extrajudicial em situações patrimoniais diversas, sempre com assistência de advogado.
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="sucessoes-familia">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">08.</span>
+                            É possível vender um imóvel antes de terminar o inventário?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        Existem instrumentos jurídicos adequados para isso, como a <strong>cessão de direitos hereditários</strong> por escritura pública ou a obtenção de <strong>alvará judicial</strong> para venda de bens do espólio durante a tramitação do inventário.
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="sucessoes-familia">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">09.</span>
+                            O divórcio pode ser realizado em cartório?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        <strong>Sim.</strong> O divórcio consensual pode ser realizado de forma rápida por escritura pública diretamente no cartório de notas, simplificando o processo de partilha de bens, sendo obrigatória a representação por advogado.
+                    </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="trabalho-inss">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">10.</span>
+                            Trabalhei sem carteira assinada. Tenho direitos trabalhistas?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        <strong>Sim, com certeza.</strong> A ausência de registro em carteira não retira os direitos do trabalhador. Mediante comprovação dos requisitos da relação de emprego (habitualidade, subordinação e remuneração), é possível buscar o reconhecimento do vínculo, anotação na CTPS, FGTS com 40%, 13º salário, férias e demais verbas rescisórias.
+                    </div>
+                </div>
+
+                <!-- FAQ 11 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="trabalho-inss">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">11.</span>
+                            Fui demitido e não recebi corretamente minhas verbas rescisórias. O que fazer?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        É fundamental realizar a análise minuciosa do Termo de Rescisão e dos extratos do FGTS para identificar diferenças no aviso-prévio, férias vencidas/proporcionais, saldo de salário, horas extras habituais e multas rescisórias devidas pelo empregador.
+                    </div>
+                </div>
+
+                <!-- FAQ 12 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="trabalho-inss">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">12.</span>
+                            O INSS negou minha aposentadoria ou benefício. Posso recorrer?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        <strong>Sim.</strong> O indeferimento administrativo pelo INSS é muito comum e pode ser contestado tanto por recurso no próprio INSS quanto, de forma mais eficiente, por meio de <strong>ação judicial contra o INSS</strong>, com perícia independente e inclusão de tempos rurais ou especiais não reconhecidos.
+                    </div>
+                </div>
+
+                <!-- FAQ 13 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="trabalho-inss">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">13.</span>
+                            É possível revisar o valor da minha aposentadoria?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        Em diversas hipóteses é viável a revisão do benefício, seja pela identificação de erros de cálculo no período básico de cálculo (PBC), omissão de salários de contribuição no CNIS ou não reconhecimento de atividade exercida em condições nocivas à saúde.
+                    </div>
+                </div>
+
+                <!-- FAQ 14 -->
+                <div class="faq-item dyn-bg-card rounded-xl border overflow-hidden transition-colors" data-category="trabalho-inss">
+                    <button onclick="toggleFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between dyn-text-heading font-semibold text-sm sm:text-base hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                        <span class="flex items-center gap-2">
+                            <span class="text-xs text-emerald-500 font-bold font-mono">14.</span>
+                            Quem nunca contribuiu para o INSS pode receber BPC/LOAS?
+                        </span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 dyn-text-muted transition-transform duration-300 flex-shrink-0 ml-3"></i>
+                    </button>
+                    <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm dyn-text-body leading-relaxed border-t border-black/10 dark:border-white/10">
+                        <strong>Sim.</strong> O Benefício de Prestação Continuada (BPC/LOAS) é um benefício assistencial que não exige tempo de contribuição prévio ao INSS. É destinado a idosos a partir de 65 anos e pessoas de qualquer idade com deficiência ou impedimento de longo prazo, desde que atendidos os critérios socioeconômicos de baixa renda da família.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botão de Ação pós-FAQ -->
+            <div class="mt-10 sm:mt-12 text-center">
+                <a href="https://wa.me/5562995361597?text=Ol%C3%A1%20Dr.%20Alex%20Ara%C3%BAjo,%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20meu%20caso."
+                    target="_blank"
+                    class="dyn-btn inline-flex items-center justify-center gap-2.5 rounded-xl font-bold text-sm sm:text-base py-4 px-8 text-white shadow-lg transition-transform hover:-translate-y-0.5 active:scale-95">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    Tirar Dúvida Diretamente no WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- CONTATO E AGENDAMENTO (Card com Dados Oficiais de Goiânia)                 -->
+    <!-- ========================================================================= -->
+    <section id="contato" class="py-14 sm:py-20 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            
+            <div class="dyn-bg-card rounded-3xl border p-7 sm:p-12 shadow-2xl relative overflow-hidden">
+                <div class="text-center mb-10">
+                    <span class="dyn-badge text-xs font-bold uppercase tracking-widest px-3.5 py-1 rounded-full border inline-block mb-3">
+                        Canais de Atendimento
+                    </span>
+                    <h2 class="dyn-text-heading text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-2">
+                        Contato e Agendamento
+                    </h2>
+                    <p class="dyn-text-body text-sm sm:text-base max-w-lg mx-auto">
+                        Atendimento presencial em Goiânia/GO mediante agendamento prévio ou online em todo o Brasil.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    
+                    <!-- WhatsApp -->
+                    <div class="dyn-bg-card-inner p-6 rounded-2xl border flex flex-col items-center justify-between">
+                        <div class="dyn-icon-box p-3.5 rounded-2xl mb-4">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="dyn-text-heading font-bold text-base sm:text-lg mb-1 font-serif">WhatsApp Oficial</h3>
+                            <p class="dyn-text-muted text-xs mb-3">Atendimento ágil para agendamentos</p>
+                            <a href="https://wa.me/5562995361597?text=Ol%C3%A1%20Dr.%20Alex%20Ara%C3%BAjo,%20gostaria%20de%20agendar%20uma%20consulta."
+                                target="_blank"
+                                class="text-emerald-500 font-bold text-base hover:underline">
+                                (62) 9 9536-1597
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Endereço -->
+                    <div class="dyn-bg-card-inner p-6 rounded-2xl border flex flex-col items-center justify-between">
+                        <div class="dyn-icon-box p-3.5 rounded-2xl mb-4">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="dyn-text-heading font-bold text-base sm:text-lg mb-1 font-serif">Escritório Presencial</h3>
+                            <p class="dyn-text-body text-xs sm:text-sm leading-relaxed mb-1">
+                                Avenida T-63, nº 1206<br>
+                                <strong>Edifício Map Center, Sala 103</strong><br>
+                                Setor Bueno, Goiânia/GO &bull; CEP 74230-100
+                            </p>
+                            <span class="text-[11px] text-emerald-500 font-semibold">Mediante agendamento</span>
+                        </div>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="dyn-bg-card-inner p-6 rounded-2xl border flex flex-col items-center justify-between">
+                        <div class="dyn-icon-box p-3.5 rounded-2xl mb-4">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="dyn-text-heading font-bold text-base sm:text-lg mb-1 font-serif">E-mail Profissional</h3>
+                            <p class="dyn-text-muted text-xs mb-3">Envio formal de documentos e consultas</p>
+                            <a href="mailto:alexaraujor.adv@gmail.com"
+                                class="text-emerald-500 font-bold text-xs sm:text-sm hover:underline break-all">
+                                alexaraujor.adv@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-10 pt-8 border-t border-black/10 dark:border-white/10 text-center">
+                    <a href="https://wa.me/5562995361597?text=Ol%C3%A1%20Dr.%20Alex%20Ara%C3%BAjo,%20gostaria%20de%20agendar%20uma%20consulta."
+                        target="_blank"
+                        class="pulse-moss dyn-btn inline-flex items-center justify-center gap-2 rounded-xl font-bold py-4 px-10 text-white shadow-xl hover:shadow-2xl transition-all uppercase tracking-wide text-sm sm:text-base">
+                        <i data-lucide="calendar" class="w-5 h-5"></i>
+                        Agendar Atendimento com Dr. Alex Araújo Rosa
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- FOOTER                                                                    -->
+    <!-- ========================================================================= -->
+    <footer class="dyn-bg-nav py-12 text-center text-xs sm:text-sm dyn-text-muted border-t transition-colors">
+        <div class="max-w-5xl mx-auto px-4 space-y-3">
+            <p class="font-bold dyn-text-heading text-base sm:text-lg font-serif">
+                Dr. Alex Araújo Rosa &bull; Advocacia & Consultoria Jurídica
+            </p>
+            <p class="text-emerald-600 dark:text-emerald-400 font-semibold text-xs sm:text-sm">
+                OAB/GO nº 69.295
+            </p>
+            <p class="text-xs dyn-text-muted max-w-xl mx-auto">
+                Avenida T-63, nº 1206, Edifício Map Center, Sala 103, Setor Bueno, Goiânia/GO, CEP 74230-100 &bull; WhatsApp: (62) 9 9536-1597
+            </p>
+            <p class="pt-4 text-[11px] dyn-text-muted border-t border-black/10 dark:border-white/10">
+                Atuação ética, técnica e transparente em estrita conformidade com o Provimento 205/2021 da OAB e com o Código de Ética e Disciplina da Advocacia.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- ========================================================================= -->
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP COM NÚMERO OFICIAL                            -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/5562995361597?text=Ol%C3%A1,%20Dr.%20Alex%20Ara%C3%BAjo%20Rosa.%20Gostaria%20de%20avaliar%20o%20meu%20caso."
+        target="_blank"
+        class="pulse-moss fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 p-4 sm:p-4.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-2xl hover:scale-105 transition-transform flex items-center justify-center border-2 border-white/20 active:scale-95"
+        title="Falar com Dr. Alex Araújo Rosa no WhatsApp">
+        <i data-lucide="message-circle" class="w-7 h-7 sm:w-8 sm:h-8"></i>
+    </a>
+
+
+    <!-- ========================================================================= -->
+    <!-- SCRIPTS DE INTERAÇÕES E TEMAS (10 PROPOSTAS COM TEXTOS REFINADOS)         -->
+    <!-- ========================================================================= -->
+    <script>
+        lucide.createIcons();
+
+        // 1. Metadados das 10 Propostas Ordenadas (1 a 6 Escuros | 7 a 10 Claros)
+        const themesData = {
+            1: {
+                badge: 'Advocacia Estratégica • OAB/GO nº 69.295',
+                subheading: 'Advocacia estratégica, segurança jurídica e proteção dos seus direitos.',
+                desc: 'Atuação em <strong>Direito Imobiliário, Família, Sucessões, Direito do Trabalho e Previdenciário</strong>. Assessoria jurídica especializada na prevenção e resolução de conflitos, proteção patrimonial e reconhecimento de direitos na esfera judicial, extrajudicial e administrativa.'
+            },
+            2: {
+                badge: 'Usucapião em Cartório & Regularização Express',
+                subheading: 'Transforme Sua Posse em Escritura Definitiva Direto no Cartório',
+                desc: 'Atuação especializada perante Cartórios de Imóveis e Fóruns. Estruturação documental rigorosa para usucapião, adjudicação compulsória e regularização de imóveis sem escritura em Goiânia e região.'
+            },
+            3: {
+                badge: 'Inventários, Heranças & Direito de Família',
+                subheading: 'Segurança Jurídica na Transmissão e Preservação do Patrimônio Familiar',
+                desc: 'Inventários judiciais e extrajudiciais (em cartório), partilha de bens, divórcios e blindagem de imóveis herdados com foco na pacificação e celeridade.'
+            },
+            4: {
+                badge: 'Direito Imobiliário & Contratos • Ed. Map Center',
+                subheading: 'Assessoria de Alta Precisão em Compra, Venda, Posse e Matrículas',
+                desc: 'Segurança contratual em negócios imobiliários, distratos, condomínios e ações possessórias com condução técnica personalizada pelo Dr. Alex Araújo Rosa.'
+            },
+            5: {
+                badge: 'Defesa Trabalhista & Previdenciária (INSS)',
+                subheading: 'Reconhecimento de Vínculo, Verbas Rescisórias e Concessão de Benefícios',
+                desc: 'Atuação combativa na Justiça do Trabalho e contra negativas indevidas do INSS. Aposentadorias, BPC/LOAS, auxílios e planejamento previdenciário individualizado.'
+            },
+            6: {
+                badge: 'Valorização & Solidez Territorial',
+                subheading: 'Regularize Seu Imóvel Urbano ou Rural e Aumente Seu Valor em até 50%',
+                desc: 'Imóveis sem escritura sofrem severo deságio comercial. Obtenha a certidão de matrícula registrada para financiamento bancário e segurança para as próximas gerações.'
+            },
+            7: {
+                badge: 'Direito Civil & Patrimonial Executivo (Light)',
+                subheading: 'Assessoria Jurídica Sob Medida para Famílias e Empreendedores',
+                desc: 'Atendimento transparente e objetivo no Setor Bueno, Goiânia/GO. Resolução ágil de demandas imobiliárias, societárias e contratuais.'
+            },
+            8: {
+                badge: 'Cartório Notarial & Regularização de Glebas',
+                subheading: 'Usucapião Rural e Urbano com Agilidade Notarial em Goiás',
+                desc: 'Condução documental em tabelionatos de notas e registros de imóveis com acompanhamento passo a passo de escrituras, atas notariais e partilhas.'
+            },
+            9: {
+                badge: 'Agilidade Notarial • Divórcios & Inventários',
+                subheading: 'A Solução Rápida e Menos Onerosa Diretamente em Cartório',
+                desc: 'Procedimentos extrajudiciais que poupam anos de espera nos fóruns tradicionais, proporcionando economia e segurança aos nossos clientes.'
+            },
+            10: {
+                badge: 'Atendimento Estratégico Goiânia & Todo o Brasil',
+                subheading: 'Consultoria Especializada Presencial e Online com Dr. Alex',
+                desc: 'Análise criteriosa de documentos, estudo de viabilidade sem compromisso e definição de estratégias jurídicas fundamentadas na jurisprudência mais recente.'
+            }
+        };
+
+        // 2. Alternador das 10 Propostas + Centralização Automática do Botão Clicado
+        function applyTheme(num) {
+            const body = document.body;
+            const buttons = document.querySelectorAll('.theme-btn');
+
+            // Limpa classes anteriores
+            body.className = body.className.replace(/theme-\d+/g, '').trim();
+
+            if (num > 1) {
+                body.classList.add('theme-' + num);
+            }
+
+            // Atualiza botões
+            buttons.forEach(b => b.classList.remove('active'));
+            const activeBtn = document.getElementById('btn-theme-' + num);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+                activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+
+            // Atualiza sutilmente os textos com o ângulo específico
+            if (themesData[num]) {
+                const badgeEl = document.getElementById('hero-badge');
+                const subEl = document.getElementById('hero-subheading');
+                const descEl = document.getElementById('hero-desc');
+
+                if (badgeEl) {
+                    badgeEl.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> ${themesData[num].badge}`;
+                }
+                if (subEl) subEl.innerHTML = themesData[num].subheading;
+                if (descEl) descEl.innerHTML = themesData[num].desc;
+            }
+
+            lucide.createIcons();
+        }
+
+        // 3. Rolagem Manual via Setas (< e >)
+        function scrollThemeTrack(offset) {
+            const track = document.getElementById('theme-track');
+            if (track) {
+                track.scrollBy({ left: offset, behavior: 'smooth' });
+            }
+        }
+
+        // 4. Alternar Modo "Ver Todos (2 Linhas)"
+        let isGridMode = false;
+        function toggleGridMode() {
+            const track = document.getElementById('theme-track');
+            const btnText = document.getElementById('btn-grid-text');
+            const arrowLeft = document.getElementById('arrow-left');
+            const arrowRight = document.getElementById('arrow-right');
+
+            isGridMode = !isGridMode;
+
+            if (isGridMode) {
+                track.classList.add('grid-mode');
+                if (btnText) btnText.innerText = "Em Linha";
+                if (arrowLeft) arrowLeft.style.display = "none";
+                if (arrowRight) arrowRight.style.display = "none";
+            } else {
+                track.classList.remove('grid-mode');
+                if (btnText) btnText.innerText = "Ver Todos (2 Linhas)";
+                if (arrowLeft) arrowLeft.style.display = "flex";
+                if (arrowRight) arrowRight.style.display = "flex";
+            }
+        }
+
+        // 5. Suporte a Arrastar com o Mouse (Drag-to-Scroll)
+        const track = document.getElementById('theme-track');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        track.addEventListener('mousedown', (e) => {
+            isDown = true;
+            track.classList.add('cursor-grabbing');
+            track.classList.remove('cursor-grab');
+            startX = e.pageX - track.offsetLeft;
+            scrollLeft = track.scrollLeft;
+        });
+
+        track.addEventListener('mouseleave', () => {
+            isDown = false;
+            track.classList.remove('cursor-grabbing');
+            track.classList.add('cursor-grab');
+        });
+
+        track.addEventListener('mouseup', () => {
+            isDown = false;
+            track.classList.remove('cursor-grabbing');
+            track.classList.add('cursor-grab');
+        });
+
+        track.addEventListener('mousemove', (e) => {
+            if (!isDown || isGridMode) return;
+            e.preventDefault();
+            const x = e.pageX - track.offsetLeft;
+            const walk = (x - startX) * 1.6;
+            track.scrollLeft = scrollLeft - walk;
+        });
+
+        // 6. Acordeão de FAQ Suave
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('.faq-icon');
+            const isActive = content.classList.contains('active');
+
+            document.querySelectorAll('.accordion-content').forEach(c => {
+                c.classList.remove('active');
+                c.style.maxHeight = null;
+            });
+            document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+            if (!isActive) {
+                content.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 30 + "px";
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // 7. Filtro por Categorias no FAQ
+        function filterFaq(category) {
+            const buttons = document.querySelectorAll('.faq-filter-btn');
+            buttons.forEach(b => {
+                b.classList.remove('active', 'dyn-btn', 'text-white');
+                b.classList.add('border-black/10', 'dark:border-white/10', 'dyn-text-muted');
+            });
+
+            const activeBtn = document.getElementById('filter-' + category);
+            if (activeBtn) {
+                activeBtn.classList.add('active', 'dyn-btn', 'text-white');
+                activeBtn.classList.remove('dyn-text-muted');
+            }
+
+            const items = document.querySelectorAll('.faq-item');
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (category === 'todos' || itemCat === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // 8. Scroll Reveal Suave
+        document.addEventListener('DOMContentLoaded', () => {
+            const selectors = [
+                'section h1', 'section h2',
+                'section p:not(.accordion-content p)',
+                '.grid > div',
+                '.dyn-bg-card'
+            ];
+
+            const elementsToAnimate = document.querySelectorAll(selectors.join(', '));
+
+            elementsToAnimate.forEach((el) => {
+                if (!el.closest('.accordion-content') && !el.closest('header')) {
+                    el.classList.add('reveal');
+
+                    if (el.parentElement && el.parentElement.classList.contains('grid')) {
+                        const siblings = Array.from(el.parentElement.children);
+                        const myIndex = siblings.indexOf(el);
+                        if (myIndex % 3 === 1) el.classList.add('reveal-delay-1');
+                        if (myIndex % 3 === 2) el.classList.add('reveal-delay-2');
+                    }
+                }
+            });
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { 
+                threshold: 0.08,
+                rootMargin: '0px 0px -30px 0px'
+            });
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
